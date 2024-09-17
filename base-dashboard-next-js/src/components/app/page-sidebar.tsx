@@ -3,11 +3,8 @@ import React from 'react';
 import Link from "next/link";
 import {
     Bell,
-    CircleUser,
     Headphones,
     Home,
-    LineChart,
-    Menu,
     Package2,
     Search,
     Settings,
@@ -43,7 +40,7 @@ function PageSidebar() {
                     <span className='text-xs uppercase px-3 my-3'>Main menu</span>
                     {menuItems.map((val, index) => {
                         const Icon = val[0];
-                        const name: string = val[1];
+                        const _name: string = val[1] as string;
                         return (
                             <Link
                                 key={"SidebarButton__" + String(index)}
@@ -51,14 +48,14 @@ function PageSidebar() {
                                 className={cn("flex items-center gap-5 rounded-lg px-3 py-2 my-1 text-muted-foreground transition-all hover:text-primary text-base capitalize", {"text-orange-600": true})}
                             >
                                 <Icon className="size-5" />
-                                {name}
+                                {_name}
                             </Link>
                         );
                     })}
                     <span className='text-xs uppercase px-3 my-3 mt-6'>Other</span>
                     {menuItems2.map((val, index) => {
                         const Icon = val[0];
-                        const name: string = val[1];
+                        const _name: string = val[1] as string;
                         return (
                             <Link
                                 key={"SidebarButton__" + String(index)}
@@ -66,7 +63,7 @@ function PageSidebar() {
                                 className={cn("flex items-center gap-5 rounded-lg px-3 py-2 my-1 text-muted-foreground transition-all hover:text-primary text-base capitalize", {"text-orange-600": true})}
                             >
                                 <Icon className="size-5" />
-                                {name}
+                                {_name}
                             </Link>
                         );
                     })}

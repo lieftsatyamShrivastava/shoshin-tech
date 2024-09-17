@@ -8,12 +8,8 @@ import {
 } from "recharts"
 
 import {
-  ChevronLeft,
-  ChevronRight,
   Copy,
-  CreditCard,
   MoreVertical,
-  Truck,
 } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
@@ -32,13 +28,6 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
-import {
-  Pagination,
-  PaginationContent,
-  PaginationItem,
-} from "@/components/ui/pagination"
-import { Progress } from "@/components/ui/progress"
-import { Separator } from "@/components/ui/separator"
 import {
   Table,
   TableBody,
